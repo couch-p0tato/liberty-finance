@@ -1,5 +1,6 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from 'react';
+import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Affairs = () => {
   return (
@@ -10,10 +11,12 @@ const Affairs = () => {
             <h3 className='txt-main text-4xl lg:text-5xl text-center lg:text-left font-semibold leading-tight'>Keeping you informed on tax laws and financial trends</h3>
 
             <a href="#" className='flex self-center lg:self-start'>
-                <button className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white'>
-                    Contact Us
-                    <img src={assets.arrow_icon} alt="" />
-                </button>
+                <Link to="/contact" className='hidden sm:flex'>
+                    <button className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white'>
+                        Contact Us
+                        <img src={assets.arrow_icon} alt="" />
+                    </button>
+                </Link>
             </a>
         </div>
 

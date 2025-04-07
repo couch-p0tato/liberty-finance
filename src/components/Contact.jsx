@@ -1,9 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+  const sendEmail = (e) => {
+    emailjs.sendForm('service_u6vop2y', 'template_ycfkm2a', e.target, 'q9NJkJjyewXL7WrCq');
+  }
+
   return (
-    <div className='bg-cover bg-[url("/hero-bg.png")] rounded-4xl px-3.5 py-10 lg:py-16 flex flex-col gap-4'>
+    <div className='bg-cover bg-[url("/hero-bg.png")] rounded-4xl px-3.5 py-10 lg:py-16 flex flex-col gap-4 my-10'>
         <h4 className='text-sm header-txt font-bold tracking-widest text-center lg:text-left'>GET IN TOUCH</h4>
 
         <div className='flex flex-col lg:flex-row justify-between'>
@@ -12,22 +18,23 @@ const Contact = () => {
         </div>
 
         <div className='mt-2.5 h-fit flex flex-col lg:flex-row gap-7 justify-between'>
-            <form className='w-full grid grid-cols-1 md:grid-cols-2 gap-4'>
-                <input type="text" placeholder='First Name' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
-                <input type="text" placeholder='Last Name' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
-                <input type="email" placeholder='Email' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
-                <input type="text" placeholder='Phone' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
+            <form className='w-full grid grid-cols-1 md:grid-cols-2 gap-4' onSubmit={sendEmail}>
+                <input type="text" name='fname' placeholder='First Name' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
+                <input type="text" name='lname' placeholder='Last Name' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
+                <input type="email" name='email' placeholder='Email' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
+                <input type="text" name='phone' placeholder='Phone' className='bg-white w-full col-span-2 lg:col-span-1 rounded-2xl px-5 py-3.5'/>
 
-                <textarea placeholder='Write a message' className='bg-white w-full col-span-2 rounded-2xl px-5 py-3.5 h-40'></textarea>
+                <textarea placeholder='Write a message' name='message' className='bg-white w-full col-span-2 rounded-2xl px-5 py-3.5 h-40'></textarea>
+
+                
+                <button type='submit' className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white justify-self-center mt-10 col-span-2'>
+                  Submit Now
+                  <img src={assets.arrow_icon} alt="" />
+                </button>
             </form>
         </div>
 
-        <a href="#" className='flex self-center mt-10'>
-          <button className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white'>
-            Submit Now
-            <img src={assets.arrow_icon} alt="" />
-          </button>
-        </a>
+        
     </div>
   )
 }

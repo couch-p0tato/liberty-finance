@@ -15,6 +15,18 @@ import counter_img_1 from './counter-img-1.png'
 import counter_img_2 from './counter-img-2.png'
 import counter_img_3 from './counter-img-3.png'
 import employee_img from './employee-img.png'
+import location_icon from './location-icon.png'
+import message_icon from './message-icon.png'
+import operator_icon from './operator-icon.png'
+import about_us_hero from './about-us-hero.png'
+import quality_icon from './quality-icon.png'
+import prof_icon from './prof-icon.png'
+import insight_icon from './insight-icon.png'
+import ops_icon from './ops-icon.png'
+import confirm_icon from './confirm-icon.png'
+import company_planning_img from './company-planning-img.png'
+import tick_icon from './tick-icon.png'
+
 
 
 export const assets = {
@@ -34,5 +46,16 @@ export const assets = {
     counter_img_1,
     counter_img_2,
     counter_img_3,
-    employee_img
+    employee_img,
+    location_icon,
+    message_icon,
+    operator_icon,
+    about_us_hero,
+    quality_icon,
+    prof_icon,
+    insight_icon,
+    ops_icon,
+    confirm_icon,
+    company_planning_img,
+    tick_icon
 }

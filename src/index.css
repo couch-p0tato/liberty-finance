@@ -3,7 +3,8 @@
 @import "tailwindcss";
 
 :root {
-    --primary: #FF8159;
+    /* --primary: #FF8159; */
+    --primary: #DA1B1C;
     --txt-primary: #0C1524;
     --txt-secondary: #4A5567;
     --gray-background: #F5F7FA;
@@ -36,6 +37,23 @@
 
 .main-font {
     font-family: var(--main-font);
+}
+
+.gradient-bg {
+    position: relative;
+}
+
+.gradient-bg:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to bottom, rgba(2,17,48,0.6), rgba(2,17,48,0.8)); */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(12, 21, 36, 0.8));
+    border-radius: 34px;
+    z-index: 0;
 }
 
 .test-border-1 {

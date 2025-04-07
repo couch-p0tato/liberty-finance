@@ -1,5 +1,6 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from 'react';
+import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -9,10 +10,12 @@ const Hero = () => {
         <p className='txt-minor text-base font-normal'>Unlock financial freedom with our flexible loan options, expert financial advice, and seamless approval process</p>
 
         <a href="#" className='flex'>
-          <button className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white'>
-            Get Started
-            <img src={assets.arrow_icon} alt="" />
-          </button>
+          <Link to="/contact" className='hidden sm:flex'>
+            <button className='flex items-center gap-3.5 cursor-pointer bg-primary px-4 py-2 rounded-lg text-white'>
+              Get Started
+              <img src={assets.arrow_icon} alt="" />
+            </button>
+          </Link>
         </a>
       </div>
 
