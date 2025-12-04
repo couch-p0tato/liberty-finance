@@ -17,15 +17,15 @@ const MoreServices = () => {
             </div>
 
             <div className='bg-cover bg-[url("/service-img-4.png")] gradient-bg h-96 w-full lg:w-[30%] rounded-4xl flex justify-center items-end pb-7'>
-              <p className='text-xl font-semibold text-white z-10'>Business Loans</p>
+              <p className='text-xl font-semibold text-white z-10'>Asset Financing</p>
             </div>
 
             <div className='bg-cover bg-[url("/service-img-5.png")] gradient-bg h-96 w-full lg:w-[30%] rounded-4xl flex justify-center items-end pb-7'>
-              <p className='text-xl font-semibold text-white z-10'>Business Loans</p>
+              <p className='text-xl font-semibold text-white z-10'>Invoice Discounting</p>
             </div>
 
             <div className='bg-cover bg-[url("/service-img-6.png")] gradient-bg h-96 w-full lg:w-[30%] rounded-4xl flex justify-center items-end pb-7'>
-              <p className='text-xl font-semibold text-white z-10'>Business Loans</p>
+              <p className='text-xl font-semibold text-white z-10'>Project Financing</p>
             </div>
         </div>
     </div>

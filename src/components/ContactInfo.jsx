@@ -15,15 +15,16 @@ const ContactInfo = () => {
             <div className='bg-cover bg-[url("/message-img.png")] gradient-bg h-96 w-full lg:w-[30%] rounded-4xl flex items-end pb-9 pl-6'>
                 <div className='z-10 w-[95%]'>
                     <img src={assets.message_icon} className='mb-4' alt="" />
-                    <a href='mailto:info@libertycreditandfinancialserviceslimited.com' target='_blank' className='text-xl font-semibold text-white block'>info@libertycreditandfin...</a>
-                    <a href='mailto:info@libertycreditandfinancialserviceslimited.com' target='_blank' className='text-xl font-semibold text-white'>info@libertycreditandfin...</a>
+                    <a href='mailto:info@libertycreditandfinancialserviceslimited.com' target='_blank' className='text-xl font-semibold text-white block hover:underline'>info@libertycreditandfin...</a>
+                    <a href='mailto:info@libertycreditandfinancialserviceslimited.com' target='_blank' className='text-xl font-semibold text-white hover:underline'>info@libertycreditandfin...</a>
                 </div>
             </div>
 
             <div className='bg-cover bg-[url("/operator-img.png")] gradient-bg h-96 w-full lg:w-[30%] rounded-4xl flex items-end pb-9 pl-6'>
                 <div className='z-10 w-[95%]'>
                     <img src={assets.operator_icon} className='mb-4' alt="" />
-                    <p className='text-xl font-semibold text-white'>Debt Consolidation</p>
+                    {/* <p className='text-xl font-semibold text-white'>+234 xxx xxx xxxx</p> */}
+                    <a href='tel:+2340000000000' className='text-xl font-semibold text-white hover:underline'>+234 XXX XXX XXXX</a>
                 </div>
             </div>
         </div>

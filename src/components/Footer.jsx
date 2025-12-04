@@ -36,7 +36,8 @@ const Footer = () => {
                     <div className='flex flex-col gap-4'>
                         <h5 className='font-semibold text-[1.3rem]'>Say Hello</h5>
                         <a href='mailto:info@libertycreditandfinancialserviceslimited.com' target='_blank' className="hover:text-[#a3a6aa]">info@libertycreditandfin...</a>
-                        <a href="tel:+2347062568217" className="hover:text-[#a3a6aa]"><p>+234 706 256 8217</p></a>
+                        {/* <a href="tel:+2347062568217" className="hover:text-[#a3a6aa]"><p>+234 706 256 8217</p></a> */}
+                        <a href="tel:+2347062568217" className="hover:text-[#a3a6aa]"><p>+234 XXX XXX XXXX</p></a>
                     </div>
                 </div>
             </div>

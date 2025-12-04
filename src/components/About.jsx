@@ -12,10 +12,10 @@ const About = () => {
         </div>
 
         <div className='mt-2.5'>
-            <img src={assets.about_us_img} alt="" />
+            <img className='w-full' src={assets.about_us_img} alt="" />
         </div>
 
-        <div className='flex flex-col lg:flex-row mt-4 gap-6'>
+        <div className='flex flex-col lg:flex-row mt-5 gap-6'>
             <div>
                 <img src={assets.hand_icon} alt="" />
                 <p className='text-xl font-semibold mt-3'>We prioritize building long-term relationships with our clients and always put their needs first</p>
